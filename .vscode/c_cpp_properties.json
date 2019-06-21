@@ -53,53 +53,27 @@
         {
             "name": "Win32",
             "includePath": [
-                "E:/mingw32/i686-w64-mingw32/include",
-                "E:/mingw64/lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/bits",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/mingw32",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/tr1",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/ssp",
-                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include",
-                "C:/MinGW/lib/gcc/mingw32/5.3.0/include",
-                "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++",
-                "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++/mingw32",
-                "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++/tr1",
-                "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/ssp",
-                "C:/Program Files (x86)/Dev-Cpp/MinGW32/include",
-                "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2",
-                "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/ssp",
-                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++",
-                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++/mingw32",
-                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++/tr1",
-                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/ssp",
-                "C:/Program Files/Dev-Cpp/MinGW32/include",
-                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2",
-                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/ssp",
-                "C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++",
-                "C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++/mingw32",
-                "C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++/tr1",
-                "C:/MinGW/lib/gcc/mingw32/5.3.0/include/ssp",
-                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include"
+                "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/include/*",
+                "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/*",
+                "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/*",
+                "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/ssp/*",
+                "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/bits/*",
+                "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32/bits/*",
+                "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32",
+                "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/ssp"
             ],
             "defines": [
                 "Mine"
             ],
             "browse": {
                 "path": [
-                    "E:/mingw32/i686-w64-mingw32/include",
-                    "E:/mingw64/lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++",
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++",
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/bits",
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/mingw32",
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/tr1",
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/ssp",
-                    "C:/MinGW/lib/gcc/mingw32/5.3.0/include",
-                    "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++",
-                    "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++/tr1",
-                    "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include",
-                    "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++/mingw32",
-                    "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/ssp",
+                    "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/include/*",
+                    "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/*",
+                    "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/*",
+                    "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/ssp/*",
+                    "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/bits/*",
+                    "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32/bits/*",
+                    "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32",
                     "${workspaceRoot}"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
@@ -107,7 +81,8 @@
             },
             "intelliSenseMode": "msvc-x64",
             "cStandard": "c11",
-            "cppStandard": "c++11"
+            "cppStandard": "c++11",
+            "compilerPath": ""
         }
     ],
     "version": 4
