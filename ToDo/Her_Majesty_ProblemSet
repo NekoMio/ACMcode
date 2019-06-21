@@ -1,0 +1,291 @@
+Her Majesty ProblemSet(by 755zzh)
+----------数学----------
+---排列组合---
+bzoj4555 uoj54 uoj221
+---快速幂---
+bzoj4688 One-Dimensional 裸题
+bzoj3231[SDOI2008]递归数列 也差不多是裸的
+bzoj4547[hdu5171] 小奇的集合 有坑点
+bzoj2326[HNOI2011]数学作业 不裸?
+bzoj1297[SCOI2009]迷路 需要一个小技巧
+bzoj1875[SDOI2009]HH去散步 需要一个小技巧
+CF 621E Wet Shark and Blocks DP...
+bzoj4870[SHOI2017]组合数问题 难点是想到用矩阵乘法...
+bzoj4818[SDOI2017]序列计数 计数
+bzoj3120 Line 需要一个小技巧
+bzoj2676 Contra 较多细节,以及一个特殊优化
+bzoj4778[Usaco2017 Open] COWBASIC 需要写个字符串处理?
+CF 551D GukiZ and Binary Operations 略有思维含量的计数题
+bzoj4037 [HAOI2015]数字串拆分 需要灵活地应用矩阵
+
+---gcd&exgcd---
+
+---高考数学---
+
+---容斥原理---
+
+---高斯消元---
+
+---卡特兰---
+
+---CRT---
+bzoj1951 bzoj3782
+---BSGS---
+bzoj3122 bzoj2242 bzoj3239 bzoj4128
+---基础知识---
+bzoj4326 bzoj1189 Cf631E bzoj4868
+bzoj1414 bzoj4598 bzoj3097 bzoj3098
+hdu4899
+---phi&降幂大法&原根---
+---狄利克雷卷积&莫比乌斯反演---
+COGS2279 bzoj4176 bzoj3930 bzoj2693
+bzoj4174
+---博弈论---
+bzoj1188 bzoj1022 bzoj4147 bzoj1413
+bzoj1228
+---奇怪的东西---
+bzoj2242 bzoj4869 bzoj2111
+----------DP----------
+---背包---
+bzoj2287 poj3093 bzoj2748 *bzoj2794
+*bzoj1190
+---线性&坐标---
+bzoj1090 bzoj1584
+---树形---
+bzoj1864 bzoj4472 *bzoj4033 *bzoj3167
+*bzoj4446 *bzoj4871
+---单调队列---
+poj1894 bzoj1855 bzoj1499 bzoj1233
+bzoj2442 bzoj1012 hdu3401 bzoj2216
+POJ3017 poj1821 POJ1742 POJ2823 
+hdu5945 bzoj1293 bzoj1499 bzoj3316
+*bzoj4476 *Codechef_LECOINS bzoj3126
+---状压---
+bzoj1087 bzoj3195 bzoj4145 *bzoj1226
+*bzoj2064 *bzoj4197 COGS2350
+---斜率优化---
+bzoj1597 bzoj4518 *bzoj3675 *Cf631E
+*bzoj4709
+---概率期望---
+Poj2096 cogs1065 cogs2477 Cf113D
+Cf167B bzoj1415 bzoj4720 *bzoj2707
+*bzoj4872 *cogs1956 *cogs2292 *bzoj2337
+*bzoj2720 *bzoj1426 *Cf24D *Cf698C
+*Cf398B COGS1495 COGS1487 COGS341
+COGS943 HDU4418  HDU4336  bzoj4318 
+bzoj1778  bzoj3029 bzoj3450  bzoj3566 
+bzoj1419  bzoj2134  bzoj3925 bzoj3191
+bzoj1076 HDU3853 bzoj2703 bzoj2969
+Cf123E Cf696B Cf398B Cf453A 
+Cf148D bzoj1426
+---插头---
+hdu1964
+hdu1693 bzoj1210 bzoj2310 bzoj2331 
+*bzoj1187 *poj3133 *poj1739 
+---数位---
+bzoj1026 bzoj3131 *bzoj4521 *bzoj3598
+*bzoj3326 *bzoj3652 Hdu2089 bzoj3652
+hdu3555 Hdu2089 bzoj4029 bzoj1833
+bzoj1799 bzoj3209 bzoj3329 hdu3943
+bzoj1026 POJ3208 bzoj4513 BZOJ3530
+BZOJ3780 SPOJ-KPSUM bzoj2713
+bzoj1833[ZJOI2010]count 数字计数
+bzoj3780 数字统计 2017.2.13
+bzoj1026[SCOI2009]Windy数 2017.2.13	
+bzoj3598[SCOI2014]方伯伯的商场之旅 2017.2.27
+bzoj4521[CQOI2016]手机号码 2017.3.27
+bzoj3131[SDOI2013]淘金 2017.4.7
+bzoj3326[SCOI2013]数数 2017.5.2
+bzoj3652 大新闻 2017.5.2
+SPOJ-KPSUM 2017.5.27
+bzoj2713[Violet2]愚蠢的副官 20
+---数据结构优化&cdq优化---
+Luogu1970 bzoj1264 *bzoj3594 *bzoj2131
+hdu3698 *hdu4719
+---乱搞---
+----------图论----------
+---网络流---
+bzoj3308 bzoj2229 bzoj4519 bzoj4435 
+bzoj1797 cogs461 bzoj1001 bzoj2879 
+~~bzoj1711~~ bzoj3630 bzoj3438 bzoj2127
+bzoj3130 bzoj1189 bzoj4514 bzoj2502
+bzoj3993 bzoj2095 bzoj2055 bzoj2324
+bzoj4873 bzoj1324 bzoj3144 bzoj4501
+bzoj3876 bzoj2039 bzoj1565 bzoj1458
+bzoj3218 bzoj3550 bzoj1283 bzoj1877
+bzoj2127 bzoj1070 bzoj4514
+---二分图&KM---
+bzoj1854 bzoj1059
+---最短路---
+cogs1738 bzoj1579
+---tarjan---
+hdu3749 Financial Crisis
+uoj67 新年的毒瘤
+bzoj1123 BLO
+bzoj1969 航线规划 
+codeforces 652e Pursuit For Artifacts
+codeforces 732F Tourist Reform
+codeforces 701f break up
+bzoj 2730 矿场搭建
+uoj30 tourists
+hdu5739 Fantasia
+---2-Sat---
+---并查集---
+cogs2043 bzoj4423
+---重构树---
+bzoj3551 bzoj3545
+---最小生成树---
+
+---拓扑序---
+
+---LCA---
+ bzoj4719
+---dfs序&欧拉序---
+
+---差分约束---
+bzoj2788
+---最小环&欧拉回路---
+
+---斯坦纳树---
+*bzoj2595
+---忘记分类了...---
+bzoj2744 bzoj1179 bzoj1143
+bzoj1123 bzoj2557 bzoj1093
+CF718E
+----------数据结构----------
+---STL&(手写)基础数据结构---
+bzoj4721 bzoj2288 bzoj1150
+---链表&块状链表---
+
+---哈夫曼树---
+bzoj4198
+---K-D树---
+bzoj1941 bzoj2989 bzoj4066 bzoj4520
+cojs1769 hdu4456 hdu4742
+---平衡树---
+POJ3481 POJ3580 bzoj2827 bzoj1125
+HDU2475 HDU3726 bzoj1503 bzoj1829
+bzoj2733 bzoj3196 bzoj1500 bzoj1588
+bzoj3223 FZU 1978 bzoj3173 bzoj2761
+bzoj1483
+---树套树---
+bzoj4553
+---树剖---
+cogs1867 cogs2109 bzoj1036 bzoj4034
+bzoj4712 bzoj3626 bzoj2325 bzoj3589
+bzoj4515
+---树状数组&线段树---
+bzoj4552 cogs778 bzoj3038 bzoj3211
+bzoj2752
+---可持久化---
+bzoj3674 bzoj3689 COGS2213 cogs2554 
+bzoj3932 bzoj1901 bzoj3123 bzoj3653
+bzoj2588 bzoj3772 bzoj3545 bzoj3551
+poj2104
+----------字符串----------
+---KMP---
+bzoj3670 bzoj3620 bzoj1009 bzoj3574
+bzoj4820
+---Trie---
+bzoj4523 bzoj1954
+---AC自动机---
+bzoj1559 bzoj1030 bzoj2754 COGS2248 
+bzoj2553 bzoj2434 bzoj3172 bzoj1195 
+bzoj1444 bzoj1030 hdu4057 hdu2296 
+hdu2825 hdu3247 zoj3494 hdu3341 
+poj1625 hdu2457
+---后缀数组---
+bzoj1031 bzoj1692 bzoj3796 bzoj4310 
+bzoj4556 bzoj3230 bzoj4698 poj1743 
+poj3261 
+---Manacher&回文自动机---
+HDU3068 bzoj3676 bzoj3790 bzoj2342
+HDU5677 bzoj2160 bzoj2565 bzoj1414
+bzoj4044 bzoj3160
+----------其他实用算法----------
+---倍增&ST表---
+bzoj2006 cogs1267
+---二分&三分---
+bzoj3477
+---矩阵乘法&循环矩阵---
+bzoj4000 bzoj2510
+---Hash---
+
+---分治---
+
+---贪心---
+bzoj1046 bzoj4582
+---暴力&模拟---
+
+---搜索---
+bzoj1082 bzoj4207 bzoj3109 bzoj3643
+cogs1442 cogs69 cogs107 cogs1271
+cogs65 cogs407 bzoj1770(cogs539) bzoj1052
+---分块---
+bzoj2724 bzoj2002 bzoj2120 bzoj2821
+bzoj2141 bzoj3744 COGS2357 bzoj4028
+bzoj3343 hdu4358 bzoj2741 bzoj3585
+bzoj3787
+---莫队---
+bzoj2038 bzoj2120 bzoj3289 bzoj3236
+bzoj4129 bzoj3052 bzoj2589
+---FFT---
+bzoj3160
+---CDQ---
+bzoj3262 bzoj2716 bzoj2244 
+HDU4742 bzoj1492 BZOJ3295
+COGS1752 bzoj4553 bzoj2683 
+---计算几何---
+
+---虚树---
+
+---树分&点分---
+bzoj3365 bzoj2599 bzoj2152 poj1741
+bzoj1316 bzoj4016 bzoj1758 bzoj3672 
+bzoj3924 bzoj4012 bzoj1095 
+
+
+联赛前杂题最后一波
+
+基本题目
+~bzoj4500矩阵 
+bzoj4152[AMPPZ2014]The Captain 
+bzoj3597[SCOI2014]方伯伯运椰子 
+bzoj4443[SCOI2015]小凸玩矩阵 
+bzoj3495[PA2010]Riddle 
+bzoj2794[Poi2012]Cloakroom 
+bzoj4446[SCOI2015]小凸玩密室 
+bzoj4321 queue2 
+bzoj2024[SHOI2009]舞会 
+bzoj4710[JSOI2011]分特产 
+bzoj2720[Violet 5]列队春游 
+bzoj4476[Jsoi2015]送礼物 
+cojs1266[NOIP2012]借教室 
+bzoj1535[POI2005]sza-template 
+bzoj1926[SDOI2010]粟粟的书架
+
+补充题目
+bzoj1016[JSOI2008]最小生成树计数 
+bzoj1226[SDOI2009]学校食堂dining 
+bzoj4773 负环 
+bzoj3754 Tree之最小方差树 
+bzoj4602[SDOI2016]齿轮 
+bzoj3124[SDOI2013]直径 
+bzoj3173[TJOI2013]最长上升子序列 
+bzoj4481[JSOI2015]非诚勿扰 
+bzoj3991[SDOI2015]寻宝游戏 
+bzoj2306[CTSC2011]幸福路径 
+bzoj4245[ONTAK2015]OR-XOR 
+bzoj2802[Poi2012]Warehouse Store 
+bzoj3709[PA2014]Bohater 
+bzoj4320[Shanghai2006]Homework 
+bzoj3132 上帝造题的七分钟 
+bzoj1818[CQOI2010]内部白点 
+bzoj4378[POI2015]Logistyka 
+bzoj4499 线性函数 
+bzoj4415[SHOI2013]发牌 
+bzoj4821[SDOI2017]相关分析 
+bzoj4484[JSOI2015]最小表示 
+bzoj4237[JOI]稻草人 
+bzoj2243[SDOI2011]染色 
+bzoj3307 雨天的尾巴

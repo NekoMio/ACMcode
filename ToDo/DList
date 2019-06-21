@@ -1,0 +1,41 @@
+1426
+HDU4405
+51NOD1670
+POJ2096
+BZOJ1419
+
+
+按推荐等级排序~(level小的更加666)
+Level 0 共11题 强力推荐
+  uoj37 uoj193 cf814E bzoj3746
+  cf804F cf855G cf923G cf865E
+  codechef_SEPT11_CNTHEX
+  hihoCoder_challenge_19A/1279
+  TopCoder_SRM_641_Hard(有兴趣可以考虑一下加强版问题:n<=1e5)
+Level 1 共13题
+  uoj348 loj553 cf938F
+  bzoj3830 bzoj3711 bzoj3717 bzoj1435
+  cf755G cf814D cf848e cf379G
+  Topcoder SRM 639 Div1-Level 2
+  Topcoder SRM 547 Div1-Level 3
+Level 2 共14题
+  uoj110 loj2450 loj2325 loj6301
+  bzoj4712 bzoj2216 bzoj2091 bzoj3831
+  cf917C cf722E cf590D cf814C
+  hdu4809 51nod1684
+
+
+
+LOJ2006「SCOI2015」小凸玩矩阵 O 
+Bzoj 2095 [Poi 2010] Bridges Y
+Bzoj 4213 贪吃蛇 Y
+loj536 花札 Y
+loj6045 价 O
+Bzoj 4067 CSTC 2015 Gender O
+bzoj2229: [Zjoi2011]最小割
+bzoj 2597 剪刀石头布
+uoj217 奇怪的线段树 Y
+uoj168 
+UOJ77/BZOJ3218 A+B Problem Y
+
+sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev 

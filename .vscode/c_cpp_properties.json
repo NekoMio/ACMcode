@@ -1,0 +1,114 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceRoot}",
+                "/usr/include",
+                "/usr/local/include"
+            ],
+            "defines": [],
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "intelliSenseMode": "clang-x64",
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ]
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceRoot}",
+                "/usr/include",
+                "/usr/local/include",
+                "/usr/include/c++/5",
+                "/usr/include/x86_64-linux-gnu/c++/5",
+                "/usr/include/c++/5/tr1",
+                "/usr/include/linux",
+                "/usr/include/x86_64-linux-gnu"
+            ],
+            "defines": [],
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "intelliSenseMode": "clang-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++14"
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "E:/mingw32/i686-w64-mingw32/include",
+                "E:/mingw64/lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++",
+                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++",
+                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/bits",
+                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/mingw32",
+                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/tr1",
+                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/ssp",
+                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include",
+                "C:/MinGW/lib/gcc/mingw32/5.3.0/include",
+                "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++",
+                "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++/mingw32",
+                "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++/tr1",
+                "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/ssp",
+                "C:/Program Files (x86)/Dev-Cpp/MinGW32/include",
+                "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2",
+                "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/ssp",
+                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++",
+                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++/mingw32",
+                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++/tr1",
+                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/ssp",
+                "C:/Program Files/Dev-Cpp/MinGW32/include",
+                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2",
+                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/ssp",
+                "C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++",
+                "C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++/mingw32",
+                "C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++/tr1",
+                "C:/MinGW/lib/gcc/mingw32/5.3.0/include/ssp",
+                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include"
+            ],
+            "defines": [
+                "Mine"
+            ],
+            "browse": {
+                "path": [
+                    "E:/mingw32/i686-w64-mingw32/include",
+                    "E:/mingw64/lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++",
+                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++",
+                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/bits",
+                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/mingw32",
+                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/tr1",
+                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/ssp",
+                    "C:/MinGW/lib/gcc/mingw32/5.3.0/include",
+                    "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++",
+                    "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++/tr1",
+                    "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include",
+                    "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++/mingw32",
+                    "C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/ssp",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "intelliSenseMode": "msvc-x64",
+            "cStandard": "c11",
+            "cppStandard": "c++11"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,165 @@
+{
+        "servers": [
+                {
+                        "server": "tw1.node.xiaoqiu.online",
+                        "server_port": 993,
+                        "password": "uVDj3s",
+                        "method": "chacha20-ietf",
+                        "obfs": "http_simple",
+                        "protocol": "auth_aes128_md5",
+                        "group": "小秋网络",
+                        "obfsparam": "9eeb11899.cloudflare.com",
+                        "protoparam": "1899:wangxiaohui",
+                        "remarks": "台湾1（亚太电信）"
+                },
+                {
+                        "server": "jp4.node.xiaoqiu.online",
+                        "server_port": 993,
+                        "password": "uVDj3s",
+                        "method": "chacha20-ietf",
+                        "obfs": "http_simple",
+                        "protocol": "auth_aes128_md5",
+                        "group": "小秋网络",
+                        "obfsparam": "9eeb11899.cloudflare.com",
+                        "protoparam": "1899:wangxiaohui",
+                        "remarks": "日本1（IDCF）"
+                },
+                {
+                        "server": "jp2.node.xiaoqiu.online",
+                        "server_port": 993,
+                        "password": "uVDj3s",
+                        "method": "chacha20-ietf",
+                        "obfs": "http_simple",
+                        "protocol": "auth_aes128_md5",
+                        "group": "小秋网络",
+                        "obfsparam": "9eeb11899.cloudflare.com",
+                        "protoparam": "1899:wangxiaohui",
+                        "remarks": "日本3（IDCF）"
+                },
+                {
+                        "server": "jp5.node.xiaoqiu.online",
+                        "server_port": 993,
+                        "password": "uVDj3s",
+                        "method": "chacha20-ietf",
+                        "obfs": "http_simple",
+                        "protocol": "auth_aes128_md5",
+                        "group": "小秋网络",
+                        "obfsparam": "9eeb11899.cloudflare.com",
+                        "protoparam": "1899:wangxiaohui",
+                        "remarks": "日本5（IDCF）"
+                },
+                {
+                        "server": "jp1.node.xiaoqiu.online",
+                        "server_port": 993,
+                        "password": "uVDj3s",
+                        "method": "chacha20-ietf",
+                        "obfs": "http_simple",
+                        "protocol": "auth_aes128_md5",
+                        "group": "小秋网络",
+                        "obfsparam": "9eeb11899.cloudflare.com",
+                        "protoparam": "1899:wangxiaohui",
+                        "remarks": "日本8（IDCF）"
+                },
+                {
+                        "server": "cn2.node.xiaoqiu.online",
+                        "server_port": 993,
+                        "password": "uVDj3s",
+                        "method": "chacha20-ietf",
+                        "obfs": "http_simple",
+                        "protocol": "auth_aes128_md5",
+                        "group": "小秋网络",
+                        "obfsparam": "9eeb11899.cloudflare.com",
+                        "protoparam": "1899:wangxiaohui",
+                        "remarks": "杭州中转日本（日服手游页游）"
+                },
+                {
+                        "server": "cn1.node.xiaoqiu.online",
+                        "server_port": 993,
+                        "password": "uVDj3s",
+                        "method": "chacha20-ietf",
+                        "obfs": "http_simple",
+                        "protocol": "auth_aes128_md5",
+                        "group": "小秋网络",
+                        "obfsparam": "9eeb11899.cloudflare.com",
+                        "protoparam": "1899:wangxiaohui",
+                        "remarks": "深圳中转香港（港服游戏专线）"
+                },
+                {
+                        "server": "us1.node.xiaoqiu.online",
+                        "server_port": 993,
+                        "password": "uVDj3s",
+                        "method": "chacha20-ietf",
+                        "obfs": "http_simple",
+                        "protocol": "auth_aes128_md5",
+                        "group": "小秋网络",
+                        "obfsparam": "9eeb11899.cloudflare.com",
+                        "protoparam": "1899:wangxiaohui",
+                        "remarks": "美国1（洛杉矶）"
+                },
+                {
+                        "server": "us2.node.xiaoqiu.online",
+                        "server_port": 993,
+                        "password": "uVDj3s",
+                        "method": "chacha20-ietf",
+                        "obfs": "http_simple",
+                        "protocol": "auth_aes128_md5",
+                        "group": "小秋网络",
+                        "obfsparam": "9eeb11899.cloudflare.com",
+                        "protoparam": "1899:wangxiaohui",
+                        "remarks": "美国2（西雅图）"
+                },
+                {
+                        "server": "kr1.node.xiaoqiu.online",
+                        "server_port": 993,
+                        "password": "uVDj3s",
+                        "method": "chacha20-ietf",
+                        "obfs": "http_simple",
+                        "protocol": "auth_aes128_md5",
+                        "group": "小秋网络",
+                        "obfsparam": "9eeb11899.cloudflare.com",
+                        "protoparam": "1899:wangxiaohui",
+                        "remarks": "韩国1（首尔SK）"
+                },
+                {
+                        "server": "hk5.node.xiaoqiu.online",
+                        "server_port": 993,
+                        "password": "uVDj3s",
+                        "method": "chacha20-ietf",
+                        "obfs": "http_simple",
+                        "protocol": "auth_aes128_md5",
+                        "group": "小秋网络",
+                        "obfsparam": "9eeb11899.cloudflare.com",
+                        "protoparam": "1899:wangxiaohui",
+                        "remarks": "香港1（HKT家宽）"
+                },
+                {
+                        "server": "hk1.node.xiaoqiu.online",
+                        "server_port": 993,
+                        "password": "uVDj3s",
+                        "method": "chacha20-ietf",
+                        "obfs": "http_simple",
+                        "protocol": "auth_aes128_md5",
+                        "group": "小秋网络",
+                        "obfsparam": "9eeb11899.cloudflare.com",
+                        "protoparam": "1899:wangxiaohui",
+                        "remarks": "香港2（阿里云）"
+                },
+                {
+                        "server": "hk3.node.xiaoqiu.online",
+                        "server_port": 993,
+                        "password": "uVDj3s",
+                        "method": "chacha20-ietf",
+                        "obfs": "http_simple",
+                        "protocol": "auth_aes128_md5",
+                        "group": "小秋网络",
+                        "obfsparam": "9eeb11899.cloudflare.com",
+                        "protoparam": "1899:wangxiaohui",
+                        "remarks": "香港4（阿里云）"
+                }
+        ],
+        "default": [],
+        "subscribe": [
+                null,
+                "https://xiaoqiu.online/link/dIlqlxpv9gvdmvbT?mu=1"
+        ]
+}
