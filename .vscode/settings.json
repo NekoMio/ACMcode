@@ -73,7 +73,6 @@
         "mount.h": "c"
     },
     "files.autoSave": "afterDelay",
-    "workbench.colorTheme": "One Monokai",
     "workbench.iconTheme": "material-icon-theme",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
