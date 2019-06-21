@@ -5,13 +5,22 @@
     "tasks": [
         {
             "label": "g++",
-            "type": "shell",
-            "command": "g++ -lm -Wall -std=c++11 -g -DMine -o \"${fileDirname}/${fileBasenameNoExtension}-run.out\" \"${file}\"",
+            "type": "process",
+            "command": "g++",
+            "args": [
+                "-lm",
+                "-Wall",
+                "-std=c++11",
+                "-g",
+                "-DMine",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.o"
+            ],
             "presentation": {
                 "echo": false,
                 "reveal": "silent",
-                "focus": true,
-                "panel": "shared"
+                "showReuseMessage": false
             },
             "group": {
                 "kind": "build",
@@ -31,7 +40,20 @@
                     "severity": 4,
                     "message": 5
                 }
+            },
+            "windows": {
+                "args": [
+                    "-lm",
+                    "-Wall",
+                    "-std=c++11",
+                    "-g",
+                    "-DMine",
+                    "${file}",
+                    "-o",
+                    "${fileDirname}/${fileBasenameNoExtension}.exe"
+                ]
             }
         }
+
     ]
 }
