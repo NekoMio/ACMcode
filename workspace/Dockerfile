@@ -2,7 +2,7 @@ FROM alpine:3.7
 MAINTAINER WILDRAGE<i@wildrage.xyz>
 
 ENV GOAL=google_and_zhwikipedia \
-    DOMAIN=google.wildrage.xyz
+    DOMAIN=google.nekomio.xyz
 
 RUN apk --no-cache add gcc g++ git python3 python3-dev libc-dev                                  && \
     pip3 install --upgrade --no-cache-dir pip && \
