@@ -57,6 +57,12 @@ void DP() {
         int Id = f[now ^ 1].v[k].Id;
         long long Sum = f[now ^ 1].v[k].Sum;
         int U = Get(Id, j), L = Get(Id, j + 1);
+        if (Map[i][j]) {
+          if (!flag) cnt--, flag = 1;
+          if (!L && !U) f[now][Id] = Sum;
+          continue;
+        }
+        
       }
     }
   }
