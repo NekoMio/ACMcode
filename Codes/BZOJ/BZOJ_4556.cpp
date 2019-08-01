@@ -87,7 +87,7 @@ struct Chairman_Tree
             rt1->sum++;
             return;
         }
-        int m = l + r >> 1
+        int m = l + r >> 1;
         if(c <= m) Update(rt1->ch[0], rt2->ch[0], l, m ,c);
         else Update(rt1->ch[1], rt2->ch[1], m + 1, r, c);
         rt1->PushUp();
