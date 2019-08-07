@@ -20,21 +20,21 @@ inline int read() {
 const int MAXN = 50005;
 int a[MAXN], n, k[MAXN], d[MAXN];
 pair<int, int> Max[MAXN];
+int f[MAXN], pre[MAXN], ans;
+bool flag[MAXN];
 #define lowbit(_) ((_) & (-(_)))
 void Add(int x) {
-  for (int i = a[x] + 1; i <= n + 1; i += lowbit(i)) {
-    Max[i] = max(Max[i], pair<int, int>(a[x], x));
+  for (int i = a[x]; i <= n; i += lowbit(i)) {
+    Max[i] = max(Max[i], pair<int, int>(f[x], x));
   }
 }
 pair<int, int> Query(int x) {
-  pair<int, int> ans;
-  for (int i = a[x] + 1; i > 0; i -= lowbit(i)) {
+  pair<int, int> ans(0, 0);
+  for (int i = a[x] - 1; i > 0; i -= lowbit(i)) {
     ans = max(ans, Max[i]);
   }
   return ans;
 }
-int f[MAXN], pre[MAXN], ans;
-bool flag[MAXN];
 stack<int> st;
 set<int> se;
 void Build() {
@@ -77,10 +77,11 @@ int main() {
         st.push(ans);
       }
     }
-    while (!st.empty()) {
+    while (st.size() > 1) {
       printf ("%d ", st.top());
       st.pop();
     }
-    printf ("\n");
+    printf ("%d\n", st.top());
+    st.pop();
   }
 }
