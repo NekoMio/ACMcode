@@ -20,7 +20,7 @@
             "type": "cppdbg",
             "request": "launch",
             "targetArchitecture": "x86", // 生成目标架构，一般为x86或x64，可以为x86, arm, arm64, mips, x64, amd64, x86_64 
-            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "program": "${fileDirname}/${fileBasenameNoExtension}-run.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}",

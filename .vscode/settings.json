@@ -70,7 +70,8 @@
         "set": "cpp",
         "stat.h": "c",
         "types.h": "c",
-        "mount.h": "c"
+        "mount.h": "c",
+        "stack": "cpp"
     },
     "files.autoSave": "afterDelay",
     "workbench.iconTheme": "material-icon-theme",

@@ -26,14 +26,7 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceRoot}",
-                "/usr/include",
-                "/usr/local/include",
-                "/usr/include/c++/5",
-                "/usr/include/x86_64-linux-gnu/c++/5",
-                "/usr/include/c++/5/tr1",
-                "/usr/include/linux",
-                "/usr/include/x86_64-linux-gnu"
+                "${workspaceRoot}"
             ],
             "defines": [],
             "browse": {
@@ -46,7 +39,7 @@
                 "databaseFilename": ""
             },
             "intelliSenseMode": "gcc-x64",
-            "compilerPath": "/usr/bin/gcc",
+            "compilerPath": "/usr/bin/g++",
             "cStandard": "c11",
             "cppStandard": "c++14"
         },

@@ -34,6 +34,7 @@ pair<int, int> Query(int x) {
   return ans;
 }
 int f[MAXN], pre[MAXN], ans;
+bool flag[MAXN];
 stack<int> st;
 set<int> se;
 void Build() {
@@ -42,8 +43,9 @@ void Build() {
   memset (Max, 0, sizeof (Max));
   memset (f, 0, sizeof (f));
   for (int i = 1; i <= n; i++) {
+    if (flag[i]) continue;
     tmp = Query(i).second;
-    f[i] = a[tmp];
+    f[i] = f[tmp] + 1;
     pre[i] = tmp;
     Add(i);
   }
@@ -58,13 +60,16 @@ void Build() {
 int main() {
   int T = read();
   while (T--) {
+    memset (flag, 0, sizeof(flag));
     n = read();
     for (int i = 1; i <= n; i++)
       a[i] = read();
     for (int i = 1; i <= n; i++)
       k[i] = read();
     Build();
-    for (int i = n; i >= 1; i--) {
+    st.push(ans);
+    for (int i = n; i >= 2; i--) {
+      flag[k[i]] = 1;
       if (se.count(k[i])) {
         Build();
         st.push(ans);
