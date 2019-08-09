@@ -96,5 +96,6 @@
     "editor.tabSize": 2,
     // "C_Cpp.errorSquiggles": "Disabled",
     "C_Cpp.clang_format_fallbackStyle": "Google",
-    "C_Cpp.clang_format_style": "Google"
+    "C_Cpp.clang_format_style": "Google",
+    "python.pythonPath": "/bin/python"
 }
