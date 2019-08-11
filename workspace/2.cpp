@@ -21,7 +21,7 @@ int main() {
     int n = read(), m = read(), k = read();
     for (int i = 1; i <= n; i++) h[i] = read();
     bool flag = 1;
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i < n; i++) {
       if (h[i] > h[i + 1]) {
         if (h[i + 1] - k < 0) {
           m += h[i];
