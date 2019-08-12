@@ -15,7 +15,7 @@
                 "-DMine",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}-run.out"
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
             ],
             "presentation": {
                 "echo": false,
@@ -50,7 +50,7 @@
                     "-DMine",
                     "${file}",
                     "-o",
-                    "${fileDirname}/${fileBasenameNoExtension}-run.out"
+                    "${fileDirname}/${fileBasenameNoExtension}.exe"
                 ]
             }
         }
