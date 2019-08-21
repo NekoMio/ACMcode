@@ -10,7 +10,6 @@
             "args": [
                 "-lm",
                 "-Wall",
-                "-std=c++11",
                 "-g",
                 "-DMine",
                 "${file}",
@@ -45,7 +44,6 @@
                 "args": [
                     "-lm",
                     "-Wall",
-                    "-std=c++11",
                     "-g",
                     "-DMine",
                     "${file}",
