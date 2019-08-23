@@ -9,6 +9,7 @@
             "command": "g++",
             "args": [
                 "-lm",
+                "-std=c++14",
                 "-Wall",
                 "-g",
                 "-DMine",
@@ -44,6 +45,7 @@
                 "args": [
                     "-lm",
                     "-Wall",
+                    "-std=c++14",
                     "-g",
                     "-DMine",
                     "${file}",
