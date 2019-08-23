@@ -1,7 +1,7 @@
-#include <cstdio>
-#include <cstring>
-#include <algorithm>
-#include <queue>
+#include<cstdio>
+#include<cstring>
+#include<algorithm>
+#include<queue>
 using namespace std;
 struct Treap {
   struct Node {
@@ -109,16 +109,102 @@ struct Treap {
   void reset() {
     DFS(root);
   }
-}rt;
-int main() {
-  rt.insert(1, 5);
-  rt.insert(2, 10);
-  rt.insert(3, 3);
-  rt.insert(4, 9);
-  rt.insert(5, 1);
-  fprintf (stderr, "%d\n", rt.delmax());
-  fprintf (stderr, "%d\n", rt.delmin().first);
-  rt.insert(6, 100);
-  fprintf (stderr, "%d\n", rt.delmax());
-  // while (1);
+};
+
+struct xl
+{
+long long o,p,q;
+};
+
+long long a,b,c,d,e,f,g,i,m,n,h1,h2,h3,r,s;
+long long xa[200000]={0},xb[200000]={0},xc[200000]={0};
+xl w[200000];
+long long za[200000]={0},zb[200000]={0};
+Treap z;
+pair<int,int> zc;
+
+bool sx(xl j,xl k)
+{
+return j.o>k.o;
 }
+
+void ma(long long &j,long long k)
+{
+if(j<k) j=k;
+}
+
+int main() 
+{
+scanf("%lld",&a);
+for(n=1;n<=a;n++)
+{
+	z.reset();
+	scanf("%lld%lld%lld",&b,&c,&d);
+	for(i=1;i<=b;i++)
+	{
+		xa[i]=xb[i]=xc[i]=0;
+	}
+	for(i=1;i<=c;i++)
+	{
+		scanf("%lld%lld%lld",&w[i].q,&w[i].p,&w[i].o);
+	}
+	sort(w+1,w+c+1,sx);
+	for(i=1;i<=c;i++)
+	{
+		e=w[i].q;
+		w[i].q=xb[e];
+		xb[e]=i;
+	}
+	e=0;
+	f=0;
+	g=0;
+	w[0].q=0;
+	for(i=1;i<=d;i++)
+	{
+		scanf("%lld",&za[i]);
+		ma(e,za[i]);
+	}
+	for(i=1;(i<=c)&&(i<=e);i++)
+	{
+		z.insert(w[i].p,w[i].o);
+		ma(g,w[i].o);
+		f++;
+	}
+	for(i=1;i<=e;i++)
+	{
+		zc=z.delmin();
+		f--;
+		//printf("%lld %lld %lld\n",i,zc.first,zc.second);
+		zb[i]=zc.second;
+		r=xb[zc.first];
+		s=w[r].p;
+		while(r!=0)
+		{
+			//printf("%lld %lld\n",s,w[r].o);
+			if(f+i<e)
+			{
+				z.insert(s,zc.second+w[r].o);
+				ma(g,zc.second+w[r].o);
+				f++;
+			}
+			else
+			{
+				if(zc.second+w[r].o<g)
+				{
+					g=z.delmax();
+					z.insert(s,zc.second+w[r].o);
+				}
+				else r=0;
+			}
+			r=w[r].q;
+			s=w[r].p;
+		}
+		
+	}
+	for(i=1;i<=d;i++)
+	{
+		printf("%lld\n",zb[za[i]]);
+	}
+}
+return 0;
+} 
