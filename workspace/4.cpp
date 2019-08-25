@@ -1,25 +1,23 @@
+#include <algorithm>
 #include <cstdio>
 #include <cstring>
-#include <algorithm>
 #include <queue>
 using namespace std;
 struct Treap {
   struct Node {
     int id, val;
     int key, size;
-    Node* ch[2];
+    Node *ch[2];
     Node() {}
-    #define _size(_) ((_)?(_)->size:0)
-    void Pushup() {
-      size = _size(ch[0]) + _size(ch[1]) + 1;
-    }
+#define _size(_) ((_) ? (_)->size : 0)
+    void Pushup() { size = _size(ch[0]) + _size(ch[1]) + 1; }
     void reset(int _id, int x) {
       id = _id, val = x;
       ch[0] = ch[1] = NULL;
       key = rand(), size = 1;
     }
-  }*root, *C;
-  queue<Node*> Q;
+  } * root, *C;
+  queue<Node *> Q;
   Node *NewNode(int id, int x) {
     if (C == NULL) {
       C = new Node[50010];
@@ -37,7 +35,7 @@ struct Treap {
     Q.push(rt);
     rt = NULL;
   }
-  typedef pair<Node*,Node*> DNode;
+  typedef pair<Node *, Node *> DNode;
   Node *Merge(Node *A, Node *B) {
     if (!A) return B;
     if (!B) return A;
@@ -67,12 +65,11 @@ struct Treap {
     }
     return o;
   }
-  Treap() {
-    root = NULL;
-  }
+  Treap() { root = NULL; }
   int rank(Node *rt, int x) {
     if (!rt) return 0;
-    return x <= rt->val ? rank(rt->ch[0], x) : rank(rt->ch[1], x) + _size(rt->ch[0]) + 1;
+    return x <= rt->val ? rank(rt->ch[0], x)
+                        : rank(rt->ch[1], x) + _size(rt->ch[0]) + 1;
   }
   void insert(int id, int x) {
     int k = rank(root, x);
@@ -97,28 +94,90 @@ struct Treap {
     root = x.first;
     return Qmax(root);
   }
-  inline int size() {
-    return _size(root);
-  }
+  inline int size() { return _size(root); }
   void DFS(Node *&rt) {
     if (rt == NULL) return;
     DFS(rt->ch[0]);
     DFS(rt->ch[1]);
     Del(rt);
   }
-  void reset() {
-    DFS(root);
-  }
-}rt;
+  void reset() { DFS(root); }
+};
+
+struct xl {
+  long long o, p, q;
+};
+
+long long a, b, c, d, e, f, g, i, m, n, h1, h2, h3, r, s;
+long long xa[200000] = {0}, xb[200000] = {0}, xc[200000] = {0};
+xl w[200000];
+long long za[200000] = {0}, zb[200000] = {0};
+Treap z;
+pair<int, int> zc;
+
+bool sx(xl j, xl k) { return j.o > k.o; }
+
+void ma(long long &j, long long k) {
+  if (j < k) j = k;
+}
+
 int main() {
-  rt.insert(1, 5);
-  rt.insert(2, 10);
-  rt.insert(3, 3);
-  rt.insert(4, 9);
-  rt.insert(5, 1);
-  fprintf (stderr, "%d\n", rt.delmax());
-  fprintf (stderr, "%d\n", rt.delmin().first);
-  rt.insert(6, 100);
-  fprintf (stderr, "%d\n", rt.delmax());
-  // while (1);
+  scanf("%lld", &a);
+  for (n = 1; n <= a; n++) {
+    z.reset();
+    scanf("%lld%lld%lld", &b, &c, &d);
+    for (i = 1; i <= b; i++) {
+      xa[i] = xb[i] = xc[i] = 0;
+    }
+    for (i = 1; i <= c; i++) {
+      scanf("%lld%lld%lld", &w[i].q, &w[i].p, &w[i].o);
+    }
+    sort(w + 1, w + c + 1, sx);
+    for (i = 1; i <= c; i++) {
+      e = w[i].q;
+      w[i].q = xb[e];
+      xb[e] = i;
+    }
+    e = 0;
+    f = 0;
+    g = 0;
+    w[0].q = 0;
+    for (i = 1; i <= d; i++) {
+      scanf("%lld", &za[i]);
+      ma(e, za[i]);
+    }
+    for (i = 1; (i <= c) && (i <= e); i++) {
+      z.insert(w[i].p, w[i].o);
+      ma(g, w[i].o);
+      f++;
+    }
+    for (i = 1; i <= e; i++) {
+      zc = z.delmin();
+      f--;
+      // printf("%lld %lld %lld\n",i,zc.first,zc.second);
+      zb[i] = zc.second;
+      r = xb[zc.first];
+      s = w[r].p;
+      while (r != 0) {
+        // printf("%lld %lld\n",s,w[r].o);
+        if (f + i < e) {
+          z.insert(s, zc.second + w[r].o);
+          ma(g, zc.second + w[r].o);
+          f++;
+        } else {
+          if (zc.second + w[r].o < g) {
+            z.insert(s, zc.second + w[r].o);
+            g = z.delmax();
+          } else
+            r = 0;
+        }
+        r = w[r].q;
+        s = w[r].p;
+      }
+    }
+    for (i = 1; i <= d; i++) {
+      printf("%lld\n", zb[za[i]]);
+    }
+  }
+  return 0;
 }
