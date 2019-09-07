@@ -53,6 +53,57 @@
                     "${fileDirname}/${fileBasenameNoExtension}.exe"
                 ]
             }
+        },
+        {
+            "label": "gcc",
+            "type": "process",
+            "command": "gcc",
+            "args": [
+                "-lm",
+                "-std=c99",
+                "-Wall",
+                "-g",
+                "-DMine",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
+            ],
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "showReuseMessage": false
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "c",
+                "fileLocation": [
+                    "relative",
+                    "/"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "windows": {
+                "args": [
+                    "-lm",
+                    "-Wall",
+                    "-std=c99",
+                    "-g",
+                    "-DMine",
+                    "${file}",
+                    "-o",
+                    "${fileDirname}/${fileBasenameNoExtension}.exe"
+                ]
+            }
         }
 
     ]

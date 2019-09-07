@@ -2,10 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "CodeLens (Launch) - HelloWorld",
+            "name": "Windows C Launch (GDB)",
+            "type": "cppdbg",
             "request": "launch",
-            "mainClass": "HelloWorld"
+            "targetArchitecture": "x64",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "miDebuggerPath": "C:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\gdb.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "externalConsole": true,
+            "preLaunchTask": "gcc"
         },
         {
             "name": "Windows C++ Launch (GDB)",
