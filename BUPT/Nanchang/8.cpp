@@ -1,8 +1,9 @@
+#include <algorithm>
 #include <cstdio>
 #include <cstring>
-#include <algorithm>
-#include <vector>
 #include <queue>
+#include <unordered_map>
+#include <vector>
 
 using namespace std;
 
@@ -23,6 +24,7 @@ inline int read() {
 long long a, b, c, d, e, f, g, i, m, n, ha, hb, hc, r, s, t;
 long long xa[5][5] = {0}, xb[5][5] = {0}, xc[5][5] = {0};
 long long y = 998244353;
+unordered_map<long long, long long> st;
 
 void js(long long j) {
   if (j == 1) {
@@ -67,22 +69,31 @@ void js(long long j) {
 }
 
 int main() {
-//  scanf("%lld%lld", &a, &b);
+  scanf("%lld%lld", &a, &b);
+  long long bb = b;
   xa[1][1] = 0;
   xa[1][2] = 2;
   xa[2][1] = 1;
   xa[2][2] = 3;
   d = 0;
-  for (i = 1; i <= 1000000; i++) {
-    b = i;
-    if (b <= 1) {
-      if (b == 0) c = 0;
-      else c = 1;
+  for (i = 1; i <= a; i++) {
+    // if (b == bb) fprintf (stderr, "%lld\n", i);
+    if (st.count(b)) {
+      c = st[b];
     } else {
-      js(b - 1);
-      c = xb[2][2];
+      if (b <= 1) {
+        if (b == 0)
+          c = 0;
+        else
+          c = 1;
+      } else {
+        js(b - 1);
+        c = xb[2][2];
+      }
+      st[b] = c;
     }
-    printf ("%lld ", c);
+    d ^= c;
+    b ^= c * c;
   }
-//  printf("%d", d);
+  printf("%lld", d);
 }
