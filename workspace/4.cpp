@@ -17,8 +17,8 @@ const int MOD = 100003;
 const int MAXN = 1e5 + 5;
 const long double pi = acos(-1.0);
 struct Complex {
-  double x, y;
-  Complex(double _x = 0, double _y = 0) : x(_x), y(_y) {}
+  long double x, y;
+  Complex(long double _x = 0, long double _y = 0) : x(_x), y(_y) {}
   Complex operator+(const Complex &a) { return Complex(x + a.x, y + a.y); }
   Complex operator-(const Complex &a) { return Complex(x - a.x, y - a.y); }
   Complex operator*(const Complex &a) {
@@ -27,10 +27,10 @@ struct Complex {
   void operator*=(const Complex &a) {
     *this = *this * a;
   }
-  Complex operator*(const double &a) { return Complex(x * a, y * a); }
-  Complex operator/(const double &a) { return Complex(x / a, y / a); }
-  void operator/=(const double &a) { x /= a; y /= a;}
-  inline double real() {
+  Complex operator*(const long double &a) { return Complex(x * a, y * a); }
+  Complex operator/(const long double &a) { return Complex(x / a, y / a); }
+  void operator/=(const long double &a) { x /= a; y /= a;}
+  inline long double real() {
     return x;
   }
 };
