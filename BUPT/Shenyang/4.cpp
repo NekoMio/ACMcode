@@ -1,0 +1,268 @@
+#include<cstdio>
+#include<algorithm>
+using namespace std;
+
+long long a,b,c,d,e,f,g,i,m,n;
+long long xa[50000]={0},xb[50000]={0};
+long long xaa[50000]={0},xab[50000]={0};
+long long xba[50000]={0},xbb[50000]={0};
+long long xca[50000]={0},xcb[50000]={0};
+long long zaa,zab,zba,zbb,zca,zcb;
+long long wa[50000]={0},wb[50000]={0},wc[50000]={0};
+long long y=1000000007;
+
+void qz(long long &j)
+{
+while(j<0) j+=y;
+}
+
+void sca(long long j)
+{
+long long k,l,r,s,t;
+xa[j]=1;
+xaa[j]=xab[j]=0;
+xba[j]=xbb[j]=0;
+xca[j]=xcb[j]=0;
+xaa[j]++;
+r=xb[j];
+s=wa[r];
+t=wc[r];
+while(r>0)
+{
+	if(xa[s]==0)
+	{
+		sca(s);
+		if(t%3==0)
+		{
+			xaa[j]+=xaa[s];
+			xba[j]+=xba[s];
+			xca[j]+=xca[s];
+			xab[j]+=xab[s];
+			xbb[j]+=xbb[s];
+			xcb[j]+=xcb[s];
+			xab[j]+=xaa[s]*t;
+			xbb[j]+=xba[s]*t;
+			xcb[j]+=xca[s]*t;
+			xaa[j]%=y;
+			xab[j]%=y;
+			xba[j]%=y;
+			xbb[j]%=y;
+			xca[j]%=y;
+			xcb[j]%=y;
+		}
+		if(t%3==1)
+		{
+			xaa[j]+=xca[s];
+			xba[j]+=xaa[s];
+			xca[j]+=xba[s];
+			xab[j]+=xcb[s];
+			xbb[j]+=xab[s];
+			xcb[j]+=xbb[s];
+			xab[j]+=xca[s]*t;
+			xbb[j]+=xaa[s]*t;
+			xcb[j]+=xba[s]*t;
+			xaa[j]%=y;
+			xab[j]%=y;
+			xba[j]%=y;
+			xbb[j]%=y;
+			xca[j]%=y;
+			xcb[j]%=y;
+		}
+		if(t%3==2)
+		{
+			xaa[j]+=xba[s];
+			xba[j]+=xca[s];
+			xca[j]+=xaa[s];
+			xab[j]+=xbb[s];
+			xbb[j]+=xcb[s];
+			xcb[j]+=xab[s];
+			xab[j]+=xba[s]*t;
+			xbb[j]+=xca[s]*t;
+			xcb[j]+=xaa[s]*t;
+			xaa[j]%=y;
+			xab[j]%=y;
+			xba[j]%=y;
+			xbb[j]%=y;
+			xca[j]%=y;
+			xcb[j]%=y;
+		}
+	}
+	r=wb[r];
+	s=wa[r];
+	t=wc[r];
+}
+xa[j]=0;
+}
+
+void scb(long long j)
+{
+long long k,l,r,s,t;
+long long waa,wab,wba,wbb,wca,wcb;
+xa[j]=1;
+waa=xaa[j]+=zaa;
+wab=xab[j]+=zab;
+wba=xba[j]+=zba;
+wbb=xbb[j]+=zbb;
+wca=xca[j]+=zca;
+wcb=xcb[j]+=zcb;
+r=xb[j];
+s=wa[r];
+t=wc[r];
+while(r>0)
+{
+	if(xa[s]==0)
+	{
+		if(t%3==0)
+		{
+			waa-=xaa[s];
+			wba-=xba[s];
+			wca-=xca[s];
+			wab-=xab[s];
+			wbb-=xbb[s];
+			wcb-=xcb[s];
+			wab-=(xaa[s]*t)%y;
+			wbb-=(xba[s]*t)%y;
+			wcb-=(xca[s]*t)%y;
+			zaa=waa;
+			zab=wab;
+			zba=wba;
+			zbb=wbb;
+			zca=wca;
+			zcb=wcb;
+			waa+=xaa[s];
+			wba+=xba[s];
+			wca+=xca[s];
+			wab+=xab[s];
+			wbb+=xbb[s];
+			wcb+=xcb[s];
+			wab+=(xaa[s]*t)%y;
+			wbb+=(xba[s]*t)%y;
+			wcb+=(xca[s]*t)%y;
+		}
+		if(t%3==1)
+		{
+			waa-=xca[s];
+			wba-=xaa[s];
+			wca-=xba[s];
+			wab-=xcb[s];
+			wbb-=xab[s];
+			wcb-=xbb[s];
+			wab-=(xca[s]*t)%y;
+			wbb-=(xaa[s]*t)%y;
+			wcb-=(xba[s]*t)%y;
+			zaa=wca;
+			zab=wcb;
+			zba=waa;
+			zbb=wab;
+			zca=wba;
+			zcb=wbb;
+			waa+=xca[s];
+			wba+=xaa[s];
+			wca+=xba[s];
+			wab+=xcb[s];
+			wbb+=xab[s];
+			wcb+=xbb[s];
+			wab+=(xca[s]*t)%y;
+			wbb+=(xaa[s]*t)%y;
+			wcb+=(xba[s]*t)%y;
+		}
+		if(t%3==2)
+		{
+			waa-=xba[s];
+			wba-=xca[s];
+			wca-=xaa[s];
+			wab-=xbb[s];
+			wbb-=xcb[s];
+			wcb-=xab[s];
+			wab-=(xba[s]*t)%y;
+			wbb-=(xca[s]*t)%y;
+			wcb-=(xaa[s]*t)%y;
+			zaa=wba;
+			zab=wbb;
+			zba=wca;
+			zbb=wcb;
+			zca=waa;
+			zcb=wab;
+			waa+=xba[s];
+			wba+=xca[s];
+			wca+=xaa[s];
+			wab+=xbb[s];
+			wbb+=xcb[s];
+			wcb+=xab[s];
+			wab+=(xba[s]*t)%y;
+			wbb+=(xca[s]*t)%y;
+			wcb+=(xaa[s]*t)%y;
+		}
+		zab+=zaa*t;
+		zbb+=zba*t;
+		zcb+=zca*t;
+		qz(zaa);
+		qz(zab);
+		qz(zba);
+		qz(zbb);
+		qz(zca);
+		qz(zcb);
+		zaa%=y;
+		zab%=y;
+		zba%=y;
+		zbb%=y;
+		zca%=y;
+		zcb%=y;
+		scb(s);
+	}
+	r=wb[r];
+	s=wa[r];
+	t=wc[r];
+}
+xa[j]=0;
+}
+
+int main()
+{
+while(scanf("%lld",&a)!=EOF)
+{
+	for(i=1;i<=a;i++)
+	{
+		xa[i]=xb[i]=0;
+		xaa[i]=xab[i]=0;
+		xba[i]=xbb[i]=0;
+		xca[i]=xcb[i]=0;
+	}
+	for(i=1;i<a;i++)
+	{
+		scanf("%lld%lld%lld",&b,&c,&d);
+		b++;
+		c++;
+		d%=y;
+		wa[2*i-1]=c;
+		wb[2*i-1]=xb[b];
+		xb[b]=2*i-1;
+		wc[2*i-1]=d;
+		wa[2*i]=b;
+		wb[2*i]=xb[c];
+		xb[c]=2*i;
+		wc[2*i]=d;
+	}
+	sca(1);
+	b=0;
+	c=0;
+	d=0;
+	zaa=0;
+	zab=0;
+	zba=0;
+	zbb=0;
+	zca=0;
+	zcb=0;
+	scb(1);
+	for(i=1;i<=a;i++)
+	{
+		b+=xab[i];
+		c+=xbb[i];
+		d+=xcb[i];
+		b%=y;
+		c%=y;
+		d%=y;
+	}
+	printf("%lld %lld %lld\n",b,c,d);
+}
+}
