@@ -39,7 +39,7 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "preLaunchTask": "g++"
+            "preLaunchTask": "g++linux"
         }
     ]
 }

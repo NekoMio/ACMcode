@@ -55,6 +55,57 @@
             }
         },
         {
+            "label": "g++linux",
+            "type": "process",
+            "command": "g++linux",
+            "args": [
+                "-lm",
+                "-std=c++14",
+                "-Wall",
+                "-g",
+                "-DMine",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}-run.out"
+            ],
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "showReuseMessage": false
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": [
+                    "relative",
+                    "/"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "windows": {
+                "args": [
+                    "-lm",
+                    "-Wall",
+                    "-std=c++14",
+                    "-g",
+                    "-DMine",
+                    "${file}",
+                    "-o",
+                    "${fileDirname}/${fileBasenameNoExtension}-run.out"
+                ]
+            }
+        },
+        {
             "label": "gcc",
             "type": "process",
             "command": "gcc",
