@@ -71,7 +71,12 @@
         "stat.h": "c",
         "types.h": "c",
         "mount.h": "c",
-        "stack": "cpp"
+        "stack": "cpp",
+        "charconv": "cpp",
+        "iterator": "cpp",
+        "memory_resource": "cpp",
+        "regex": "cpp",
+        "string": "cpp"
     },
     "files.autoSave": "afterDelay",
     "workbench.iconTheme": "material-icon-theme",
@@ -91,7 +96,7 @@
         ],
         "Red"
     ],
-    "editor.fontFamily": "'Cascadia Code', 'Fira Code Retina', 'Source Code Pro','Ubuntu Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'Cascadia Code', 'Fira Code Retina', 'Source Code Pro', 'Ubuntu Mono', 'Droid Sans Mono', 'monospace', monospace, 'Noto Emoji', 'Droid Sans Fallback'",
     "editor.tabSize": 2,
     // "C_Cpp.errorSquiggles": "Disabled",
     "C_Cpp.clang_format_fallbackStyle": "Google",

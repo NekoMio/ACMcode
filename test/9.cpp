@@ -17,7 +17,7 @@ const int MAXN = 505;
 const int INF = 0x3f3f3f3f;
 struct edge {
   int END, next, cap;
-}v[MAXN * MAXN * 5];
+} v[MAXN * MAXN * 5];
 int first[3 * MAXN], p;
 void add(int a, int b, int c) {
   v[p].END = b, v[p].next = first[a], v[p].cap = c, first[a] = p++;
@@ -27,8 +27,8 @@ int dis[MAXN * 3];
 bool vis[MAXN * 3];
 bool BFS(int S, int E) {
   queue<int> Q;
-  memset (vis, 0, sizeof(vis));
-  memset (dis, 0, sizeof(dis));
+  memset(vis, 0, sizeof(vis));
+  memset(dis, -1, sizeof(dis));
   vis[S] = 1;
   dis[S] = 0;
   Q.push(S);
@@ -69,10 +69,10 @@ int Dinic(int S, int E) {
 }
 int main() {
   int n = read(), m = read(), k = read();
-  memset (first, -1, sizeof (first));
+  memset(first, -1, sizeof(first));
   int S = 0, p = n + m + 1, T = n + m + 2;
-  add(S, p, n + k);
-  for (int i = 1; i <= n; i++) add(p, i, 2);
+  add(S, p, k);
+  for (int i = 1; i <= n; i++) add(p, i, 1), add(S, i, 1);
   for (int i = 1; i <= n; i++) {
     int c = read();
     for (int j = 1; j <= c; j++) {
@@ -81,6 +81,6 @@ int main() {
     }
   }
   for (int i = 1; i <= m; i++) add(i + n, T, 1);
-  printf ("%d\n", Dinic(S, T));
-  while (1);
+  printf("%d\n", Dinic(S, T));
+  // while (1);
 }
