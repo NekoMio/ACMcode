@@ -1,208 +1,4 @@
-1. 算法 (AG)
-	1. 网络流 (NF)
-		1. 网络流线性规划
-			1. 上下界网络流
-			1. 最小割
-			1. 费用流
-		1. Edmond-Karp (EK)
-			1. Capacity Scaling
-			1. Dinic&SAP
-			1. HLPP
-	1. 差分约束 (DC)
-	1. 通用线性规划 (LP)
-		1. 单纯形算法
-	1. 分数规划 (FP)
-	1. 贪心 (GE)
-	1. 分治 (DAC)
-		1. 序列分治
-			1. [CDQ&~~整体二分&线段树分治~~](#CDQ)
-			1. [ ] 快速排序
-				1. 快速选择
-					1. Median of Medians
-		1. 树分治
-			1. [点/~~边~~分治](#点分治)
-			1. 重链剖分
-				1. 树上启发式合并
-				1. 长链剖分
-	1. 搜索 (SR)
-		1. 搜索优化与剪枝
-			1. [A* (AS)](#Astar)
-			1. 迭代加深搜索 (ID)
-		1. 折半搜索 (MIM)
-	1. 随机化及近似 (RAN)
-		1. ~~爬山~~
-		1. [模拟退火](#模拟退火)
-		1. ~~遗传算法~~
-		1. ~~机器学习基础~~
-	1. 离线逆序
-		1. [莫队算法](#莫队)
-	1. [散列 (HS)](#离散化)
-1. 数据结构 (DS)
-	1. 栈 (STK) => STL
-	1. 队列 (QUE) => STL
-	1. [散列表 (HST)](#Hash_Table)
-	1. 堆 (HP)
-		1. 二叉堆
-		1. 可并堆
-	1. 二叉查找树 (BST)
-		1. 堆树 (THP)
-		1. [Treap](#Treap)
-		1. 红黑树 (RBT)
-		1. [替罪羊树 (SGT)](#替罪羊树)
-	1. [树状数组 (BIT)](#树状数组)
-	1. [线段树 (SGM)](#线段树)
-	1. [并查集 (UFS)](#并查集)
-		1. 带权并查集
-		1. 路径压缩
-		1. 按秩合并
-	1. [Sparse Table (ST)](#ST)
-	1. [K维树 (KDT)](#KD-Tree)
-	1. 动态树
-		1. 点/边分治树 (DCT)
-		1. [Link-Cut Tree (LCT)](#LCT)
-		1. 欧拉回路树 (ETT)
-		1. AAA Tree & Top Tree
-	1. 动态图
-1. 图论 (GT)
-	1. 最小生成树
-		1. Prim 算法 (PM)
-        1. Kruskal 算法 (KS)
-			1. Boruvka 算法
-		1. 最小树形图
-			1. 朱-刘算法
-		1. 斯坦纳树
-	1. 最短路径
-		1. [dijkstra 算法 (DJ)](#Dijkstra)
-		1. [Bellman-Ford 算法 (BFD)](#SPFA)
-			1. Johnson 算法
-		1. Floyd 算法 (FL)
-	1. 欧拉路&哈密顿路
-	1. 连通性
-		1. 点/边双连通分量 (BCC)
-		1. 强连通性 (SCC)
-		1. 支配树
-	1. 匹配、划分与覆盖
-		1. KM 算法 (KM)
-			1. 交错树
-			1. 带花树算法 (BL)
-			1. Tutte 矩阵与一般图匹配
-		1. 覆盖集与独立集
-		1. 稳定婚姻问题与 GS 算法 (GS)
-		1. Hall 定理
-		1. DAG 路径覆盖
-		1. Dilworth 定理
-	1. 2-SAT
-	1. 虚树
-	1. 仙人掌
-		1. 圆方树
-	1. 弦图与区间图
-	1. 图的树分解
-	1. 最小割
-		1. 最小割树
-		1. Stoer-Wagner 算法
-	1. 平面图
-		1. 平面图对偶图
-	1. 网格图
-1. 计算几何 (CG)
-	1. 几何向量
-	1. 二维凸包
-		1. 凸包算法
-			1. 卷包裹法
-			1. 动态凸包
-		1. 三维凸包
-		1. 半平面交
-	1. 旋转卡壳
-	1. 三角剖分
-		1. V图
-	1. 路径规划
-1. 代数 (AB)
-	1. 微积分基础
-		1. Simpson 积分算法
-	1. 线性代数
-		1. 矩阵基础
-			1. [高斯消元](#高斯消元)
-			1. 拟阵
-			1. Matrix-Tree 定理
-			1. 线性递推
-	1. 多项式与幂级数
-		1. [DFT/FFT (FT)](#FFT)
-			1. [NTT](#NTT)
-			1. Bluestein 算法
-		1. [多项式基本运算](#多项式)
-			1. 多项式除法
-			1. 多项式基本初等函数
-		1. FWT (FWT)
-			1. 子集变换
-	1. 抽象代数
-		1. 置换群
-			1. Schreier-Sims 算法
-1. 数论 (NT)
-	1. 同余和整除
-		1. 欧几里得算法
-			1. 扩展欧几里得算法
-			1. 类欧几里得算法
-		1. 欧拉定理
-		1. 二次剩余
-		1. 原根及离散对数
-			1. [BSGS](#BSGS&exBSGS)
-		1. lucas 定理
-	1. 质数与简单数论函数
-		1. 埃氏筛
-		1. [欧拉筛](#线性筛)
-		1. 莫比乌斯反演
-		1. 数论函数快速求和
-			1. [杜教筛](#杜教筛)
-			1. 洲阁筛
-		1. 素性测试
-			1. [Miller-Robin (MR)](#Miller_Robin)
-			1. [Pollard's Rho 因子分解](#Miller_Robin)
-1. 组合计数 (CE)
-	1. 计数原理
-		1. 容斥原理
-	1. 计数数列
-		1. 斯特林数
-		1. 卡特兰数
-		1. 伯努利数
-	1. 生成函数 (GF)
-	1. 杨氏矩阵
-	1. Burnside 引理
-		1. Polya 定理
-1. 博弈论与信息论 (GI)
-	1. 博弈基础
-		1. 组合游戏
-			1. 博弈树与 DAG 模型
-			1. Sprague-Grundy 函数 (SG)
-			1. Nim (NIM)
-				1. Nim 积
-			1. 威佐夫博弈
-		1. 不平等博弈
-			1. 超现实数
-		1. 不完全信息博弈
-	1. 通信与数据压缩
-		1. 校验码
-		1. 哈夫曼编码
-		1. 游程编码		
-1. 形式语言，自动机与串处理 (FAS)
-	1. 串处理 (STR)
-		1. 模式匹配
-			1. [KMP 算法 (KMP) && EXKMP](#KMP&EXKMP)
-			1. AC 自动机
-			1. Shift-And 算法
-		1. 字典树 (TRI)
-			1. 后缀树
-				1. 后缀数组 (SA)
-				1. 后缀自动机 (SAM)
-		1. Border
-			1. Periodicity 引理
-		1. 回文串
-			1. manacher 算法
-			1. 回文自动机 (PAM)
-	1. 形式语言
-		1. 正则表达式 (RE)
-		1. 有限状态自动机 (DFA)
-	1. 并行计算
-
-##### CDQ
+### CDQ
 ```c++
 #include <cstdio>
 #include <cstring>
@@ -299,7 +95,7 @@ int main()
 }
 ```
 
-##### 点分治
+### 点分治
 ```c++
 #include <cstdio>
 #include <cstring>
@@ -410,7 +206,7 @@ int main()
 }
 ```
 
-##### Astar
+### Astar
 ```c++
 #include <cstdio>
 #include <cstring>
@@ -514,7 +310,7 @@ int Astar(int k) {
 }
 ```
 
-##### 模拟退火
+### 模拟退火
 ```c++
 #include <cstdio>
 #include <algorithm>
@@ -642,7 +438,7 @@ int main()
     // while (1);
 }
 ```
-##### 莫队
+### 莫队
 ```c++
 #include <cstdio>
 #include <cstring>
@@ -690,7 +486,7 @@ int main()
 }
 ```
 
-##### 离散化
+### 离散化
 
 ```c++
 cnt = 0;
@@ -704,7 +500,7 @@ for (int i = 1; i <= n; i++) {
   a[i] = lower_bound(Hash + 1, Hash + cnt + 1, a[i]) - Hash;
 }
 ```
-##### Hash_Table
+### Hash_Table
 ```c++
 const int MAXN = 200000, BASE = 76543;
 struct Hash_Table
@@ -739,7 +535,7 @@ struct Hash_Table
 }Hash;
 ```
 
-##### Treap
+### Treap
 ```c++
 struct Treap
 {
@@ -865,7 +661,7 @@ struct Treap
 };
 ```
 
-##### 替罪羊树
+### 替罪羊树
 ```c++
 namespace Scapegoat_Tree
 {
@@ -999,7 +795,7 @@ namespace Scapegoat_Tree
     };
 }
 ```
-##### FFT
+### FFT
 ```c++
 const int MAXN = 60005 << 2;
 const double pi = acos(-1.0);
@@ -1038,7 +834,7 @@ void FFT(Complex *a, Complex *b)
 }
 ```
 
-##### NTT
+### NTT
 ```c++
 const int MAXN = 2e6;
 const long long MOD = 998244353;
@@ -1089,7 +885,7 @@ void FFt(const int *a, const int *b, int *res, int n) {
 }
 ```
 
-##### 树状数组
+### 树状数组
 ```c++
 long long Sum[MAXN];
 int Num[MAXN];
@@ -1111,7 +907,7 @@ int query(int x) {
 }
 ```
 
-##### 线段树
+### 线段树
 ```c++
 const int N = 100005;
 int Sum[N << 2];
@@ -1190,7 +986,7 @@ int Query_Sum(int L, int R, int l, int r, int rt)
 }
 ```
 
-##### 并查集
+### 并查集
 ```c++
 int find(int x) {
   if (fa[x] != x) fa[x] = find(fa[x]);
@@ -1199,7 +995,7 @@ int find(int x) {
 ```
 
 
-##### ST
+### ST
 ```c++
 int Max[(50005 << 1) + 200][16], Min[(50005 << 1) + 200][16];
 
@@ -1232,7 +1028,7 @@ int main () {
 }
 ```
 
-##### KD-Tree
+### KD-Tree
 ```c++
 #include <cstdio>
 #include <cstring>
@@ -1450,7 +1246,7 @@ int main()
 }
 ```
 
-##### LCT
+### LCT
 ```c++
 #include <cstdio>
 #include <cstring>
@@ -1607,7 +1403,7 @@ int main()
 
 ```
 
-##### Dijkstra
+### Dijkstra
 ```c++
 #include <bits/stdc++.h>
 const int N = 1e6 + 1;
@@ -1660,7 +1456,7 @@ int main() {
 
 ```
 
-##### SPFA
+### SPFA
 ```c++
 int dis[N];
 bool flag[N];
@@ -1694,7 +1490,7 @@ bool Spfa(int x)
 }
 ```
 
-##### 多项式
+### 多项式
 ```c++
 #include <cstdio>
 #include <cstring>
@@ -1972,7 +1768,7 @@ int main()
 }
 ```
 
-##### 高斯消元
+### 高斯消元
 ```c++
 long long gauss(int n)
 {
@@ -2032,7 +1828,7 @@ void gauss() {
 }
 ```
 
-##### BSGS&exBSGS
+### BSGS&exBSGS
 ```c++
 int pow_mod(int a, int b, int c)
 {
@@ -2121,7 +1917,7 @@ int exBSGS(int a, int b, int c)
 }
 ```
 
-##### KMP&EXKMP
+### KMP&EXKMP
 ```c++
 long long nxt[MAXN], pre[MAXN], extend[MAXN];
 char w[MAXN], t[MAXN];
@@ -2168,7 +1964,7 @@ void Match(char *s, char *t) {
 }
 ```
 
-##### 线性筛
+### 线性筛
 ```c++
 const int MAXN = 50000;
 int prime[MAXN + 2], mu[MAXN + 2], Sum_mu[MAXN + 2], d[MAXN + 2], e[MAXN + 2], cnt;
@@ -2210,7 +2006,7 @@ void Get_d()
 }
 ```
 
-##### 杜教筛
+### 杜教筛
 ```c++
 #include <bits/stdc++.h>
 using namespace std;
@@ -2284,7 +2080,7 @@ int main() {
 }
 ```
 
-##### Miller_Robin
+### Miller_Robin
 ```c++
 long long tmp[100];
 int tot;
@@ -2339,5 +2135,480 @@ void Divide(long long x, int c) {
   long long z = x, tp = c;
   while (z >= x) z = Pollard_Rho(z, c--);
   Divide(z, tp), Divide(x / z, tp);
+}
+```
+### FWT
+异或
+```c++
+void FWT(int *a, int m) {
+  for (int k = 1; k < m; k <<= 1) {
+    for (int i = 0; i < m; i++) {
+      if (i & k) continue;
+      int tmp = (a[i] + a[i + k]) % MOD;
+      a[i + k] = (a[i] - a[i + k] + MOD) % MOD;
+      a[i] = tmp;
+    }
+  }
+}
+void IFWT(int *a, int m) {
+  for (int k = 1; k < m; k <<= 1) {
+    for (int i = 0; i < m; i++) {
+      if (i & k) continue;
+      int tmp = 1ll * (a[i] + a[i + k]) % MOD * Inv2 % MOD;
+      a[i + k] = 1ll * (a[i] - a[i + k] + MOD) % MOD * Inv2 % MOD;
+      a[i] = tmp;
+    }
+  }
+}
+```
+或运算
+$$ FWT[A] = merge(FWT[A_0], FWT[A_0] + FWT[A_1]) $$
+$$ UFWT[A'] = merge(UFWT[A_0'], UFWT[A_1'] - UFWT[A_0']) $$
+与运算
+$$ FWT[A] = merge(FWT[A_0] + FWT[A_1], FWT[A_1] $$
+$$ UFWT[A'] = merge(UFWT[A_0'] - UFWT[A_1'], UFWT[A_1']) $$
+
+### SAM
+```c++
+struct SAM
+{
+    int last, cnt;
+    map<int, int> a[MAXN << 1];
+    int fa[MAXN << 1], Max[MAXN << 1];
+    SAM()
+    {
+        last = ++cnt;
+    }
+    void extend(int c)
+    {
+        int p = last, np = last = ++cnt;
+        Max[np] = Max[p] + 1;
+        while (!a[p][c] && p) a[p][c] = np, p = fa[p]; 
+        if (!p) fa[np] = 1;
+        else
+        {
+            int q = a[p][c];
+            if (Max[q] == Max[p] + 1) fa[np] = q;
+            else
+            {
+                int nq = ++cnt;
+                Max[nq] = Max[p] + 1;
+                a[nq] = a[q];
+                fa[nq] = fa[q];
+                fa[np] = fa[q] = nq;
+                while (a[p][c] == q) a[p][c] = nq, p = fa[p];
+            }
+        }
+    }
+    void print(int len)
+    {
+        int p = 1;
+        while (len--)
+        {
+            printf ("%d%c", a[p].begin()->first, " \n"[len == 0]);
+            p = a[p].begin()->second;
+        }
+    }
+}sam;
+```
+
+### Fail_Tree
+```c++
+struct Node
+{
+	bool flag;
+	int ID;
+	Node* ch[26], *fail;
+	Node(int x)
+	{
+		flag = 0;
+		ID = x;
+		fail = NULL;
+		memset(ch, 0, sizeof(ch));
+	}
+}*root, *q[6005];
+int Index = 0;
+void Insert(char *s)
+{
+	int len = strlen(s);
+	Node *rt = root;
+	for (int i = 0; i < len; i++)
+	{
+		if(rt->ch[s[i]-'A'] == NULL)
+		{
+			rt->ch[s[i]-'A'] = new Node(++Index);
+			q[Index] = rt->ch[s[i]-'A'];
+		}
+		rt = rt->ch[s[i]-'A'];
+	}
+	rt->flag = 1;
+}
+queue<Node*> Q;
+void Get_fail()
+{
+	for (int i = 0; i < 26; i++)
+		if(root->ch[i])
+		{
+			root->ch[i]->fail = root;
+			Q.push(root->ch[i]);
+		}
+	while(!Q.empty())
+	{
+		Node *rt = Q.front();
+		rt->flag |= rt->fail->flag;
+		Q.pop();
+		Node *p = NULL;
+		for (int i = 0; i < 26; i++)
+		{
+			if(rt->ch[i] != NULL)
+			{
+				p = rt->fail;
+				while(p != NULL)
+				{
+					if(p->ch[i] != NULL)
+					{
+						rt->ch[i]->fail = p->ch[i];
+						break;
+					}
+					p = p->fail;
+				}
+				if(p == NULL)
+					rt->ch[i]->fail = root;
+				Q.push(rt->ch[i]);
+			}
+			if(rt->ch[i]==NULL)
+				rt->ch[i] = rt->fail->ch[i];
+		}
+	}
+}
+```
+
+### PAM
+```c++
+struct PAM
+{
+    int len[MAXN], fail[MAXN], tr[MAXN][26];
+    int cnt, now, Maxlen;
+    PAM() {cnt = 1, fail[0] = fail[1] = 1, len[1] = -1; Maxlen = 0;}
+    int extend(int c, int pos)
+    {
+        int p = now;
+        while (s[pos - len[p] - 1] != s[pos]) p = fail[p];
+        if (!tr[p][c])
+        {
+            int np = ++cnt, q = fail[p];
+            len[np] = len[p] + 2;
+            Maxlen = max(Maxlen, len[np]);
+            while (s[pos - len[q] - 1] != s[pos]) q = fail[q];
+            fail[np] = tr[q][c];
+            tr[p][c] = np;
+        }
+        now = tr[p][c];
+        return pos - len[now];
+    }
+}pam;
+```
+
+### 半平面交
+```c++
+#include <cstdio>
+#include <cstring>
+#include <algorithm>
+#include <cmath>
+using namespace std;
+inline int read()
+{
+    int x=0,f=1;char ch=getchar();
+    while (ch<'0'||ch>'9'){if(ch=='-')f=-1;ch=getchar();}
+    while (ch>='0'&&ch<='9'){x=x*10+ch-'0';ch=getchar();}
+    return x*f;
+}
+const int MAXN = 200005;
+const double eps = 1e-15;
+struct Point
+{
+    double x, y;
+    Point(double _x = 0, double _y = 0) : x(_x), y(_y) {}
+    Point operator + (const Point &a) const
+    {
+        return Point(x + a.x, y + a.y);
+    }
+    Point operator - (const Point &a) const
+    {
+        return Point(x - a.x, y - a.y);
+    }
+    double operator * (const Point &b) const
+    {
+        return x * b.y - b.x * y;
+    }
+};
+struct line
+{
+    double a, b, c, k;
+    int id;
+    line(){;}
+    line(double _a, double _b, double _c, int _id)
+    {
+        id = _id;
+        a = _a, b = _b, c = _c;
+        k = atan2(-a, b);
+    }
+}l[MAXN], tmp[MAXN];
+Point Cross(const line &a, const line &b)
+{
+    double x = (a.b * b.c - a.c * b.b) / (a.a * b.b - b.a * a.b);
+    double y = (a.a * b.c - a.c * b.a) / (a.b * b.a - b.b * a.a);
+    return Point(x, y);
+}
+bool cmp(const line &a, const line &b)
+{
+    if (a.k == b.k) return a.c < b.c;
+    return a.k < b.k;
+}
+bool Judge(const line &a, const Point &x)
+{
+    return a.a * x.x + a.b * x.y + a.c < 0;
+}
+int cnt;
+void addline(double a, double b, double c)
+{
+    if (a != 0) b /= fabs(a), c /= fabs(a), a /= fabs(a);
+    cnt++;
+    l[cnt] = line(a, b, c, cnt); 
+}
+int q[MAXN], h, t;
+bool Judge(int mid)
+{
+    h = 1, t = 0;
+    // q[1] = 1, q[2] = 2;
+    int top = 0;
+    tmp[++top] = l[1];
+    for (int i = 2; i <= cnt; i++)
+        if (l[i].k - l[i - 1].k >= eps)
+            tmp[++top] = l[i];
+    for (int i = 1; i <= top; i++)
+    {
+        if (tmp[i].id > 2 * mid) continue;
+        while (t > h && Judge(tmp[i], Cross(tmp[q[t]], tmp[q[t - 1]]))) t--;
+        while (t > h && Judge(tmp[i], Cross(tmp[q[h]], tmp[q[h + 1]]))) h++;
+        q[++t] = i;
+    }
+    while (t > h && Judge(tmp[q[h]], Cross(tmp[q[t]], tmp[q[t - 1]]))) t--;
+    while (t > h && Judge(tmp[q[t]], Cross(tmp[q[h]], tmp[q[h + 1]]))) h++;
+    if (t - h >= 2) return 1;
+    else return 0;
+}
+int main()
+{
+    // freopen ("bzoj_2732.in", "r", stdin);
+    // freopen ("bzoj_2732.out", "w", stdout);
+    int n = read();
+    for (int i = 1; i <= n; i++)
+    {
+        double x = read(), y1 = read(), y2 = read();
+        addline(1.0 * x * x, x, -y1);
+        addline(-1.0 * x * x, -x, y2);
+    }
+    addline(-1, 0, 0);
+    l[cnt].id = 0; 
+    addline(0, 1, 0);
+    l[cnt].id = 0;
+    int L = 1, R = n;
+    sort(l + 1, l + cnt + 1, cmp);
+    // int t = 1;
+    // for (int i = 2; i <= cnt; i++)
+    //     if (l[i].k - l[i - 1].k >= eps)
+    //         l[++t] = l[i];
+    // cnt = t;
+    int ans = 0;
+    while (L <= R)
+    {
+        int mid = L + R >> 1;
+        if (Judge(mid)) ans = mid, L = mid + 1;
+        else R = mid - 1;
+    }
+    printf ("%d\n", ans);
+}
+```
+
+### 线性基
+```c++
+struct LinearBasis
+{
+	long long v[65];
+	int n, t, cnt;
+	void Build(long long *x, int n)
+	{
+		this->n = n;
+		long long a[65];
+		memset (a, 0, sizeof (a));
+		for (int i = 1; i <= n; i++)
+		{
+			long long t = x[i];
+			for (int j = 62; j >= 0; j--)
+			{
+				if ((t & (1ll << j)) == 0) continue;
+				if (a[j]) t ^= a[j];
+				else
+				{
+					for (int k = 0; k < j; k++) if (t & (1 << k)) t ^= a[k];
+					for (int k = j + 1; k <= 62; k++) if (a[k] & (1ll << j)) a[k] ^= t;
+					cnt++;
+					a[j] = t;
+					break;
+				}
+			}
+		}
+		t = cnt != n;
+		for (int i = 0; i <= 62; i++) if (a[i]) v[++v[0]] = a[i];
+		
+	}
+	long long Query(int k)
+	{
+		k -= t;
+		if (!k) return 0;
+		if (k >= (1ll << v[0])) return -1;
+		long long ret = 0;
+		for (int i = 1; i <= v[0]; i++)
+		{
+			if (k & (1 << (i - 1)))
+			{
+				ret ^= v[i];
+				k -= (1 << (i - 1));
+			}
+		}
+		// if (k) return -1;
+		return ret;
+	}
+	void clear()
+	{
+		memset (v, 0, sizeof (v));
+		n = t = cnt = 0;
+	}
+}G;
+```
+
+### Simpson
+```c++
+#include <cstdio>
+#include <cstring>
+#include <algorithm>
+#include <cmath>
+using namespace std;
+double alpha;
+int n, cnt;
+const double eps = 1e-10;
+const int MAXN = 505;
+double s[MAXN], h[MAXN], r[MAXN];
+double p2(double x)
+{
+    return x*x;
+}
+struct line
+{
+    double x1, x2, y1, y2;
+}a[MAXN];
+double Calc(double L, double R, double fl, double fr, double fm)
+{
+    return (R - L) / 6.0 * (fl + fr + 4 * fm);
+}
+double F(double x)
+{
+    double ans = 0;
+    for (int i = 0; i < n; i++)
+        if (fabs(s[i] - x) < r[i])
+            ans = max(ans, sqrt(p2(r[i]) - p2(s[i] - x)));
+    for (int i = 1; i <= cnt; i++)
+        if (a[i].x1 < x && a[i].x2 > x)
+            ans = max(ans, a[i].y1 + (a[i].y2 - a[i].y1) / (a[i].x2 - a[i].x1) * (x - a[i].x1));
+    return ans;
+}
+double Simpson(double L, double R, double mid, double fl, double fr, double fm, double s)
+{
+    double m1 = (L + mid) / 2, m2 = (mid + R) / 2;
+    double f1 = F(m1), f2 = F(m2);
+    double s1 = Calc(L, mid, fl, fm, f1), s2 = Calc(mid, R, fm, fr, f2);
+    if (fabs(s - s1 - s2) < eps) return s1 + s2;
+    return Simpson(L, mid, (L + mid) / 2, fl, fm, f1, s1) + Simpson(mid, R, (mid + R) / 2, fm, fr, f2, s2);
+}
+int main()
+{
+    scanf ("%d%lf", &n, &alpha);
+    alpha = 1./tan(alpha);
+    for (int i = 0; i <= n; i++)
+    {
+        scanf ("%lf", &h[i]);
+        if (i) h[i] += h[i - 1];
+        s[i] = h[i] * alpha;
+    }
+    double L = 2000, R = -2000;
+    for (int i = 0; i < n; i++)
+    {
+        scanf ("%lf", &r[i]);
+        L = min(L, s[i] - r[i]);
+        R = max(R, s[i] + r[i]);
+    }
+    R = max(R, s[n]);
+    r[n] = 0;
+    for (int i = 0; i < n; i++)
+    {
+        double d = s[i + 1] - s[i];
+        if (d > fabs(r[i] - r[i + 1]))
+        {
+            a[++cnt].x1 = s[i] - r[i] * (r[i + 1] - r[i]) / d;
+            a[cnt].y1 = sqrt(p2(r[i]) - p2(a[cnt].x1 - s[i]));
+            a[cnt].x2 = s[i + 1] - r[i + 1] * (r[i + 1] - r[i]) / d;
+            a[cnt].y2 = sqrt(p2(r[i + 1]) - p2(a[cnt].x2 - s[i + 1]));
+        }
+    }
+    double fl = F(L), fr = F(R), fm = F((1.0 * L + R) / 2);
+    printf ("%.2f\n", 2 * Simpson(L, R, (1.0 * L + R) / 2, fl, fr, fm, Calc(L, R, fl, fr, fm)));
+}
+```
+
+### exgcd
+```c++
+long long mult(long long a, long long b, long long P)
+{
+	a %= P, b %= P;
+	long long ans = 0;
+	while (b)
+	{
+		if (b & 1) ans = (ans + a) % P;
+		b >>= 1;
+		a = (a + a) % P;
+	}
+	return ans;
+}
+long long pow_mod(long long a, long long b, long long P)
+{
+	long long ans = 1;
+	while (b)
+	{
+		if (b & 1) ans = mult(ans, a, P);
+		b >>= 1;
+		a = mult(a, a, P);
+	}
+	return ans;
+}
+long long exgcd(long long a, long long b, long long &x, long long &y)
+{
+	if (b == 0)
+	{
+		x = 1;
+		y = 0;
+		return a;
+	}
+	long long ret = exgcd(b, a % b, x, y);
+	long long tmp = x;
+	x = y;
+	y = tmp - a / b * y;
+	return ret;
+}
+long long Inv(long long x, long long N)
+{
+	long long a, b;
+	exgcd(x, N, a, b);
+	return (a % N + N) % N;
 }
 ```
