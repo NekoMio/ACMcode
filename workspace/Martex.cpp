@@ -41,47 +41,47 @@ struct F{
 }a[100][100], b;
 char s[10];
 int main() {
-  int n, t;
-  scanf ("%d", &n);
+  int n, m, t;
+  scanf ("%d%d", &n, &m);
   for (int i = 1; i <= n; i++) {
-    for (int j = 1; j <= n; j++) {
+    for (int j = 1; j <= m; j++) {
       scanf ("%d", &t);
       a[i][j] = t;
     }
-    a[i][i + n] = 1;
+    a[i][i + m] = 1;
   }
   int x, y;
   while (1) {
     scanf ("%s", s);
     if (s[0] == '+') {
       scanf ("%d%d%d%d", &x, &y, &b.a, &b.b);
-      for (int i = 1; i <= 2 * n; i++) {
+      for (int i = 1; i <= 2 * m; i++) {
         a[x][i] = a[x][i] + a[y][i] * b;
       }
     } else if (s[0] == '-') {
       scanf ("%d%d%d%d", &x, &y, &b.a, &b.b);
-      for (int i = 1; i <= 2 * n; i++) {
+      for (int i = 1; i <= 2 * m; i++) {
         a[x][i] = a[x][i] - a[y][i] * b;
       }
     } else if (s[0] == '*') {
       scanf ("%d%d%d%d", &x, &b.a, &b.b);
-      for (int i = 1; i <= 2 * n; i++) {
+      for (int i = 1; i <= 2 * m; i++) {
         a[x][i] = a[x][i] * b;
       }
     } else if (s[0] == 'p') {
       for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= n; j++) {
+        for (int j = 1; j <= m; j++) {
           printf ("%d/%d ", a[i][j].a, a[i][j].b);
         }
         printf ("\n");
       }
       printf ("\n");
-      for (int i = 1; i <= n; i++) {
-        for (int j = n + 1; j <= 2 * n; j++) {
-          printf ("%d/%d ", a[i][j].a, a[i][j].b);
-        }
-        printf ("\n");
-      }
+      // for (int i = 1; i <= n; i++) {
+      //   for (int j = m + 1; j <= 2 * m; j++) {
+      //     printf ("%d/%d ", a[i][j].a, a[i][j].b);
+      //   }
+      //   printf ("\n");
+      // }
     }
   }
 }

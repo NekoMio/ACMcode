@@ -1,6 +1,6 @@
 var isnprime = [];
 var prime = [], cnt = 0;
-const MAXN = 10000000;
+const MAXN = 300;
 for (var i = 1; i <= MAXN; ++i) isnprime[i] = 0;
 isnprime[1] = 1;
 for (var i = 2; i <= MAXN; ++i) {
