@@ -64,7 +64,7 @@ int main() {
         a[x][i] = a[x][i] - a[y][i] * b;
       }
     } else if (s[0] == '*') {
-      scanf ("%d%d%d%d", &x, &b.a, &b.b);
+      scanf ("%d%d%d", &x, &b.a, &b.b);
       for (int i = 1; i <= 2 * m; i++) {
         a[x][i] = a[x][i] * b;
       }
@@ -82,6 +82,10 @@ int main() {
       //   }
       //   printf ("\n");
       // }
+    } else if (s[0] == 's') {
+      scanf("%d%d", &x, &y);
+      for (int i = 1; i <= m; i++)
+        swap(a[x][i], a[y][i]);
     }
   }
 }
