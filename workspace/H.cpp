@@ -134,9 +134,14 @@ double dfs(int a, int b, int c, int d, int x, int pre) {
         f[a][b][c][d][x][i] /= 3.0;
       }
     }
+    if (a == 1 && b == 0 && c == 0 && d == 3 && x == 3) {
+      cout << A[0].da << ' ' << A[1].da << endl;
+    }
   }
-  if (f[a][b][c][d][x][0] + f[a][b][c][d][x][1] + f[a][b][c][d][x][2] < 0.9) {
+  if (f[a][b][c][d][x][0] + f[a][b][c][d][x][1] + f[a][b][c][d][x][2] != 1) {
     cout << a << ' ' << b << ' ' << c << ' ' << d << ' ' << x << endl;
+    cout << f[a][b][c][d][x][0] << ' ' << f[a][b][c][d][x][1] << ' '
+         << f[a][b][c][d][x][2] << endl;
   }
   return f[a][b][c][d][x][pre];
 }
@@ -155,7 +160,8 @@ void init() {
         }
       }
     }
-    for (int j = 1; j < 40; j++) f[0][0][0][j][i][2] = 1;
+    for (int j = 1; j < 40; j++)
+      f[0][0][0][j][i][2] = 1, f[0][0][0][j][i][0] = f[0][0][0][j][i][1] = 0;
   }
 }
 int main() {
