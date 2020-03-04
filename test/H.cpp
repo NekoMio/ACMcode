@@ -25,23 +25,39 @@ int Calc1(int len, int c00, int c01, int c10, int c11) {
 int Calc0(int len, int c00, int c01, int c10, int c11) {
   return 1ll * C(c00 + c10, c10) * C(c11 + c01 - 1, c01 - 1) % MOD;
 }
-int Calc(char *s, int c00, int c01, int c10, int c11) {
-  if (strlen(s) < Sumlen) return 0;
-  if (strlen(s) > Sumlen) return Calc1(Sumlen, c00, c01, c10, c11);
+int Calc(char *s, int c00, int c01, int c10, int c11, int tp) {
+  if (strlen(s + 1) < Sumlen) return 0;
+  if (strlen(s + 1) > Sumlen) return Calc1(Sumlen, c00, c01, c10, c11);
   long long ans = 0;
-  for (int i = 2; i <= Sumlen; i++) {
-    if (s[i] == 0) {
-      if (s[i - 1] == 0) c00--;
-      if (s[i - 1] == 1) c10--;
+  for (int i = 2; i < Sumlen; i++) {
+    if (s[i] == '0') {
+      if (s[i - 1] == '0') c00--;
+      if (s[i - 1] == '1') c10--;
     } else {
-      (ans += Calc0(Sumlen - i, c00 - 1 - (s[i - 1] == 0), c01, c10 - (s[i - 1] == 1), c11)) %= MOD;
-      (ans += Calc1(Sumlen - i, c00 - (s[i - 1] == 0), c01, c10 - 1 - (s[i - 1] == 1), c11)) %= MOD;
-      if (s[i - 1] == 0) c01--;
-      if (s[i - 1] == 1) c11--;
+      (ans += Calc0(Sumlen - i, c00 - 1 - (s[i - 1] == '0'), c01, c10 - (s[i - 1] == '1'), c11)) %= MOD;
+      (ans += Calc1(Sumlen - i, c00 - (s[i - 1] == '0'), c01, c10 - 1 - (s[i - 1] == '1'), c11)) %= MOD;
+      if (s[i - 1] == '0') c01--;
+      if (s[i - 1] == '1') c11--;
     }
   }
-  if (c00 == 0 && c11 == 0 && c01 == 0 && c10 == 0) ans++;
-  return ans;
+  if (s[Sumlen - 1] == '0') {
+    if (c00 - 1 == 0 && c11 == 0 && c01 == 0 && c10 == 0) ans++;
+    if (s[Sumlen] == '1') {
+      if (c00 == 0 && c11 == 0 && c01 - 1 == 0 && c10 == 0) ans++;
+      c01--;
+    } else {
+      c00--;
+    }
+  } else {
+    if (c00 == 0 && c11 == 0 && c01 == 0 && c10 - 1 == 0) ans++;
+    if (s[Sumlen] == '1') {
+      if (c00 == 0 && c11 - 1 == 0 && c01 == 0 && c10 == 0) ans++;
+      c11--;
+    } else {
+      c10--;
+    }
+  }
+  return ans - tp * (c00 == 0 && c11 == 0 && c01 == 0 && c10 == 0);
 }
 int main() {
   scanf ("%s%s", a + 1, b + 1);
@@ -50,5 +66,5 @@ int main() {
   F[0] = 1;
   Sumlen = c00 + c01 + c10 + c11 + 1;
   for (int i = 1; i <= MAXN - 1; i++) F[i] = F[i - 1] * i % MOD;
-  printf ("%d\n", (Calc(b, c00, c01, c10, c11) - Calc(a, c00, c01, c10, c11) + MOD) % MOD);
+  printf ("%d\n", (Calc(b, c00, c01, c10, c11, 0) - Calc(a, c00, c01, c10, c11, 1) + MOD) % MOD);
 }
