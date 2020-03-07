@@ -26,6 +26,7 @@ int Calc0(int len, int c00, int c01, int c10, int c11) {
   return 1ll * C(c00 + c10, c10) * C(c11 + c01 - 1, c01 - 1) % MOD;
 }
 int Calc(char *s, int c00, int c01, int c10, int c11, int tp) {
+  if (c10 != c01 && c10 != c01 + 1) return 0;
   if (strlen(s + 1) < Sumlen) return 0;
   if (strlen(s + 1) > Sumlen) return Calc1(Sumlen, c00, c01, c10, c11);
   long long ans = 0;
@@ -57,7 +58,7 @@ int Calc(char *s, int c00, int c01, int c10, int c11, int tp) {
       c10--;
     }
   }
-  return ans - tp * (c00 == 0 && c11 == 0 && c01 == 0 && c10 == 0);
+  return (ans - tp * (c00 == 0 && c11 == 0 && c01 == 0 && c10 == 0)) % MOD;
 }
 int main() {
   scanf ("%s%s", a + 1, b + 1);
@@ -66,5 +67,5 @@ int main() {
   F[0] = 1;
   Sumlen = c00 + c01 + c10 + c11 + 1;
   for (int i = 1; i <= MAXN - 1; i++) F[i] = F[i - 1] * i % MOD;
-  printf ("%d\n", (Calc(b, c00, c01, c10, c11, 0) - Calc(a, c00, c01, c10, c11, 1) + MOD) % MOD);
+  printf ("%d\n", ((Calc(b, c00, c01, c10, c11, 0) - Calc(a, c00, c01, c10, c11, 1)) % MOD + MOD) % MOD);
 }
