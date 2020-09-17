@@ -46,16 +46,16 @@
         {
             "name": "Win32",
             "includePath": [
-                "F:/scoop/apps/gcc/current/x86_64-w64-mingw32/include/*",
-                    "F:/scoop/apps/gcc/current/include/"
+                "D:/scoop/apps/gcc/current/x86_64-w64-mingw32/include/*",
+                "D:/scoop/apps/gcc/current/include/"
             ],
             "defines": [
                 "Mine"
             ],
             "browse": {
                 "path": [
-                    "F:/scoop/apps/gcc/current/x86_64-w64-mingw32/include/*",
-                    "F:/scoop/apps/gcc/current/include/",
+                    "D:/scoop/apps/gcc/current/x86_64-w64-mingw32/include/*",
+                    "D:/scoop/apps/gcc/current/include/",
                     "${workspaceRoot}"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
@@ -64,7 +64,7 @@
             "intelliSenseMode": "clang-x64",
             "cStandard": "c11",
             "cppStandard": "c++11",
-            "compilerPath": "F:/scoop/apps/gcc/current/bin/g++.exe"
+            "compilerPath": "D:/scoop/apps/gcc/current/bin/g++.exe"
         }
     ],
     "version": 4
