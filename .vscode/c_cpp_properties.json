@@ -47,7 +47,8 @@
             "name": "Win32",
             "includePath": [
                 "D:/scoop/apps/gcc/current/x86_64-w64-mingw32/include/*",
-                "D:/scoop/apps/gcc/current/include/"
+                "D:/scoop/apps/gcc/current/include/",
+                "D:/scoop/apps/gcc/9.3.0-1/include/c++/9.3.0/x86_64-w64-mingw32/"
             ],
             "defines": [
                 "Mine"
@@ -61,7 +62,7 @@
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
             },
-            "intelliSenseMode": "clang-x64",
+            "intelliSenseMode": "gcc-x64",
             "cStandard": "c11",
             "cppStandard": "c++11",
             "compilerPath": "D:/scoop/apps/gcc/current/bin/g++.exe"
