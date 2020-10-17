@@ -96,11 +96,12 @@
         ],
         "Red"
     ],
-    "editor.fontFamily": "'Cascadia Code', 'Sarasa Term SC', 'Fira Code Retina', 'Source Code Pro', 'Ubuntu Mono', 'Droid Sans Mono', 'monospace', monospace, 'Noto Emoji', 'Droid Sans Fallback'",
+    "editor.fontFamily": "'Ubuntu Mono', 'Sarasa Term SC', 'Fira Code Retina', 'Source Code Pro', 'Ubuntu Mono', 'Droid Sans Mono', 'monospace', monospace, 'Noto Emoji', 'Droid Sans Fallback'",
     "editor.tabSize": 2,
     // "C_Cpp.errorSquiggles": "Disabled",
     "C_Cpp.clang_format_fallbackStyle": "Google",
     "C_Cpp.clang_format_style": "Google",
     "python.pythonPath": "F:\\scoop\\shims\\python3.exe",
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "code-runner.runInTerminal": true
 }

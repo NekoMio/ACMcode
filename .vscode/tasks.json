@@ -57,7 +57,7 @@
         {
             "label": "g++linux",
             "type": "process",
-            "command": "g++linux",
+            "command": "g++",
             "args": [
                 "-lm",
                 "-std=c++14",
