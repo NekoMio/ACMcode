@@ -96,7 +96,7 @@
         ],
         "Red"
     ],
-    "editor.fontFamily": "'Ubuntu Mono', 'Sarasa Term SC', 'Fira Code Retina', 'Source Code Pro', 'Ubuntu Mono', 'Droid Sans Mono', 'monospace', monospace, 'Noto Emoji', 'Droid Sans Fallback'",
+    // "editor.fontFamily": "'Sarasa Term SC', 'Fira Code Retina', 'Source Code Pro', 'Ubuntu Mono', 'Droid Sans Mono', 'monospace', monospace, 'Noto Emoji', 'Droid Sans Fallback'",
     "editor.tabSize": 2,
     // "C_Cpp.errorSquiggles": "Disabled",
     "C_Cpp.clang_format_fallbackStyle": "Google",
