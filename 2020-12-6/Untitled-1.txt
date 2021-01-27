@@ -1,0 +1,15 @@
+int P = -INF;
+bool flag = 0;
+void DFS(bitptr *rt) {
+  if (!rt) return;
+  DFS(rt->ch[0]);
+  if (rt->val < P) flag = 1;
+  P = rt->val;
+  DFS(rt->ch[1]);
+}
+bool isBST(bitptr *rt) {
+  P = -INF;
+  flag = 0;
+  DFS(rt);
+  return flag;
+}
