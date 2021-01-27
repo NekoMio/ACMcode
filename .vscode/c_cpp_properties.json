@@ -65,7 +65,7 @@
             "intelliSenseMode": "gcc-x64",
             "cStandard": "c11",
             "cppStandard": "c++11",
-            "compilerPath": "D:/scoop/apps/gcc/current/bin/g++.exe"
+            "compilerPath": "F:/scoop/apps/gcc/current/bin/g++.exe"
         }
     ],
     "version": 4
